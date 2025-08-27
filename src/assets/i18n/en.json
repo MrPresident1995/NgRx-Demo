@@ -1,0 +1,22 @@
+{
+    "description.pt1": "NgRx helps keep track of the state of your Angular application, especially as it grows in complexity.",
+    "description.pt2": "It allows you to centralize state, react to events, and organize data flow in a clear and predictable way.",
+    "description.pt3": "This demo serves to introduce you to the main features of this library in a very simple way.",
+    "description.pt4": "I hope you like it!",
+    "description.footer": "Demo by Fabio Hong",
+
+    "matTooltip.input": "Type in the activity you want to add",
+    "matTooltip.addItem": "Click to add an activity",
+    "matTooltip.removeItem": "Click to remove the activity",
+
+    "placeholder.input": "Enter the activity to be recorded",
+
+    "list.empty": "List still empty!",
+
+    "lang.it.short": "IT",
+    "lang.it": "Italian",
+    "lang.en.short": "EN",
+    "lang.en": "English",
+    "lang.changeTo.it": "Click to change the language to Italian",
+    "lang.changeTo.en": "Click to change the language to English"
+}

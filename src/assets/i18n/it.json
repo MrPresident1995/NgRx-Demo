@@ -1,0 +1,22 @@
+{
+    "description.pt1": "NgRx aiuta a mantenere sotto controllo lo stato dell'applicazione Angular, specialmente quando cresce di complessità.",
+    "description.pt2": "Permette di centralizzare lo stato, reagire agli eventi e organizzare il flusso dei dati in modo chiaro e predicibile.",
+    "description.pt3": "Questa demo serve a presentarvi in modo molto semplice le principali funzionalità di questa libreria.",
+    "description.pt4": "Spero vi piaccia!",
+    "description.footer": "Demo a cura di Fabio Hong",
+
+    "matTooltip.input": "Digita l'attività da inserire",
+    "matTooltip.addItem": "Clicca per aggiungere un'attività",
+    "matTooltip.removeItem": "Clicca per rimuovere l'attività",
+
+    "placeholder.input": "Inserisci l'attività da registrare",
+
+    "list.empty": "Lista ancora vuota!",
+
+    "lang.it.short": "IT",
+    "lang.it": "Italiano",
+    "lang.en.short": "EN",
+    "lang.en": "Inglese",
+    "lang.changeTo.it": "Clicca per cambiare la lingua in Italiano",
+    "lang.changeTo.en": "Clicca per cambiare la lingua in Inglese"
+}
