@@ -31,13 +31,13 @@
     </div>
 
     <!-- Lista delle voci inserite + bottone rimozione voci -->
-    <div class="item-list-container">
+    <div class="item-list-container" *ngIf="todolist$ | async as todolist">
       <h2>ToDo</h2>
 
-      <p *ngIf="(todolist$ | async)?.length === 0">{{'list.empty' | translate}}</p>
+      <p *ngIf="todolist.length === 0">{{'list.empty' | translate}}</p>
 
       <div class="item-list">
-        <div *ngFor="let item of todolist$ | async; let i = index" class="item">
+        <div *ngFor="let item of todolist; let i = index" class="item">
           <p>
             {{item}}
           </p>
@@ -52,16 +52,16 @@
     </div>
 
     <!-- Bottoni di selezione della lingua -->
-    <div class="lang-container">
+    <div class="lang-container" *ngIf="currentLang$ | async as currentLang">
       <button mat-raised-button 
-              class="lang-btn" [ngClass]="{ 'active-lang': (currentLang$ | async) === LANG_IT }" color="primary" 
+              class="lang-btn" [ngClass]="{ 'active-lang': currentLang === LANG_IT }" color="primary" 
               [matTooltip]="'lang.changeTo.it' | translate" 
               (click)="changeLang(LANG_IT)">
         {{'lang.it.short' | translate}}
       </button>
       
       <button mat-raised-button 
-              class="lang-btn" [ngClass]="{ 'active-lang': (currentLang$ | async) === LANG_EN }" color="primary" 
+              class="lang-btn" [ngClass]="{ 'active-lang': currentLang === LANG_EN }" color="primary" 
               [matTooltip]="'lang.changeTo.en' | translate" 
               (click)="changeLang(LANG_EN)">
         {{'lang.en.short' | translate}}
